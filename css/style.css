@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -13,9 +14,29 @@ header {
   padding: 15px;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
 
-  background-color: #000;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 95%;
+}
+
+p {
+  font-size: 90%;
+  font-weight: 200;
+}
+
+.logo_title {
+  margin-left: 10px;
 }
