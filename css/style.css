@@ -117,3 +117,10 @@ p {
   margin-left: 50px;
   font-size: 0.6em;
 }
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
