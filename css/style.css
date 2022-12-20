@@ -10,6 +10,7 @@
 
 html {
   font-size: 20px !important;
+  background-color: #fff;
 }
 
 .meu_header {
@@ -61,7 +62,6 @@ html {
 
 .menu a:hover {
   text-decoration: none;
-
   color: #ffc100;
 }
 
@@ -107,6 +107,7 @@ html {
   padding: 5px;
   color: #fff;
   background-color: #eee;
+  color: var(--color-blue);
 
   border-radius: 5px;
 }
