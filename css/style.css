@@ -424,3 +424,10 @@ img {
     width: 30%;
   }
 }
+
+input[type="button"] {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+}
