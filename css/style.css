@@ -4,13 +4,17 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 
+  --primary-color: #abd5fb;
   --color-blue: #0a17ba;
   --color-yellow: #ffc100;
 }
 
 html {
   font-size: 20px !important;
-  background-color: #fff;
+}
+
+body {
+  background-color: #fff !important;
 }
 
 .meu_header {
@@ -24,6 +28,8 @@ html {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+
+  background-color: #fff;
 }
 
 .minha_logo {
@@ -76,8 +82,9 @@ html {
   padding: 100px;
   width: 100%;
   height: 600px;
-  background-color: #0a17ba;
   font-size: 1.5em;
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-lancamento-de-foguete-com-fumaca-ou-nuvens_1017-33467.jpg?w=2000");
+  background-size: cover;
 }
 
 .banner h2 {
@@ -116,10 +123,9 @@ html {
 
 .apresentacao {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: nowrap;
-
+  align-items: center;
+  justify-content: space-between;
   padding: 100px;
 }
 
@@ -128,28 +134,12 @@ html {
 }
 
 .texto {
-  display: inline-block;
-  position: relative;
-  font-size: 1.5em;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-.texto h2 {
-  position: absolute;
-  left: -50px;
-  white-space: nowrap;
-}
-
-.texto h3 {
-  margin-top: 100px;
-  white-space: nowrap;
-}
-
-.texto h3 {
-  margin-left: 50px;
-}
-.texto p {
-  margin-left: 50px;
-  font-size: 0.6em;
+  padding-left: 50px;
 }
 
 .servicos {
@@ -224,6 +214,7 @@ p {
   align-items: center;
   flex-direction: column;
   margin-bottom: 50px;
+  background-color: #fff !important;
 }
 
 .clientes {
@@ -279,7 +270,7 @@ textarea {
 
 footer {
   width: 100%;
-  background-color: #000;
+  background-color: var(--color-blue);
   color: #fff;
   text-align: center;
 }
