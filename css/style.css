@@ -7,6 +7,7 @@
   --primary-color: #abd5fb;
   --color-blue: #0a17ba;
   --color-yellow: #ffc100;
+  --text-color: #2674aa;
 }
 
 html {
@@ -15,6 +16,18 @@ html {
 
 body {
   background-color: #fff !important;
+}
+
+h2 {
+  color: var(--color-blue) !important;
+}
+
+h3 {
+  color: var(--color-yellow) !important;
+}
+
+.carousel-item {
+  height: 250px;
 }
 
 .meu_header {
@@ -94,13 +107,13 @@ body {
 }
 
 .banner p {
-  color: var(--color-yellow) !important;
+  color: var(--text-color) !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .banner a:visited {
-  color: var(--color-blue);
+  color: var(--text-color);
   background-color: #eee;
 }
 
@@ -116,7 +129,7 @@ body {
   padding: 5px;
   color: #fff;
   background-color: #eee;
-  color: var(--color-blue);
+  color: var(--text-color);
 
   border-radius: 5px;
 }
@@ -248,16 +261,9 @@ p {
   padding: 30px;
 }
 
-.box {
-  width: 500px;
+.elementos_form {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  border-radius: 5px;
 }
 
 input {
@@ -371,10 +377,6 @@ img {
   font-size: 1rem;
 }
 
-.box img {
-  width: ;
-}
-
 @media (min-width: 950px) {
   .row1-container {
     display: flex;
@@ -390,6 +392,30 @@ img {
   .box-down {
     position: relative;
     top: 150px;
+  }
+  .box {
+    width: 20%;
+  }
+  .header p {
+    width: 30%;
+  }
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-down2 {
+    position: relative;
+    top: -150px;
   }
   .box {
     width: 20%;
