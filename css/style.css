@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #fff !important;
+  background-color: #eee !important;
 }
 
 h2 {
@@ -28,6 +28,19 @@ h3 {
 
 .carousel-item {
   height: 250px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue),
+    var(--text-color)
+  );
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.carousel-item h5 {
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 
 .meu_header {
@@ -42,7 +55,11 @@ h3 {
   flex-wrap: wrap;
   align-content: center;
 
-  background-color: #fff;
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue),
+    var(--text-color)
+  );
 }
 
 .minha_logo {
@@ -76,18 +93,18 @@ h3 {
 }
 
 .menu a:visited {
-  color: #0a17ba;
+  color: #fff;
 }
 
 .menu a:hover {
   text-decoration: none;
-  color: #ffc100;
+  color: var(--color-blue);
 }
 
 .menu a {
   margin-right: 10px;
   text-decoration: none;
-  color: #0a17ba;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -209,11 +226,21 @@ h3 {
 .depoimentos {
   width: 100%;
   padding: 100px;
+  padding-top: 0px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.carousel {
+  width: 300px;
+  box-shadow: 10px 5px 5px 1px rgb(98, 89, 89);
+}
+
+.carousel p {
+  font-size: 0.7rem;
 }
 
 p {
@@ -226,8 +253,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
-  background-color: #fff !important;
+  padding: 100px;
+  padding-top: 0px;
 }
 
 .clientes {
@@ -235,6 +262,12 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.all_clientes {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .clientes img {
@@ -257,8 +290,24 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue),
+    var(--text-color)
+  );
   padding: 30px;
+}
+
+.formulario h2 {
+  color: #fff !important;
+}
+
+.formulario p {
+  color: #fff;
+}
+
+.formulario img {
+  height: 250px;
 }
 
 .elementos_form {
@@ -338,6 +387,7 @@ h1:last-of-type {
   box-shadow: 0px 30px 40px -20px var(--grayishBlue);
   padding: 30px;
   margin: 20px;
+  background-color: #fff;
 }
 
 img {
@@ -426,8 +476,8 @@ img {
 }
 
 input[type="button"] {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--color-blue);
+  color: #fff;
   border: none;
   border-radius: 5px;
 }
