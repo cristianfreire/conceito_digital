@@ -274,6 +274,7 @@ h3 {
 
 .carousel p {
   font-size: 0.8rem;
+  font-weight: normal;
 }
 
 p {
@@ -433,6 +434,20 @@ h1:last-of-type {
   h1 {
     font-size: 1.5rem;
   }
+  .apresentacao {
+    flex-direction: column;
+  }
+  .formulario {
+    flex-direction: column;
+  }
+
+  .clientes {
+    flex-direction: column;
+  }
+
+  .clientes2 {
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -469,10 +484,6 @@ img {
 @media (max-width: 450px) {
   .box {
     height: 200px;
-  }
-
-  .apresentacao {
-    flex-direction: row;
   }
 }
 
