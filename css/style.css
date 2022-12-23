@@ -524,7 +524,7 @@ img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 412px) {
   .meu_header {
     height: auto !important;
     align-items: center;
@@ -551,6 +551,7 @@ img {
 
   .banner {
     height: auto;
+    width: auto;
   }
 
   .banner h1 {
