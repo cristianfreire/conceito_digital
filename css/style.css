@@ -112,32 +112,41 @@ h3 {
   width: 100%;
   height: 600px;
   font-size: 1.5em;
-  background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-lancamento-de-foguete-com-fumaca-ou-nuvens_1017-33467.jpg?w=2000");
+  /*background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-lancamento-de-foguete-com-fumaca-ou-nuvens_1017-33467.jpg?w=2000");
+  */
+  background-image: url("../img/backgorund.jpg");
+
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner h1 {
-  color: #fff !important;
+  color: var(--color-blue) !important;
   padding: 0 !important;
   margin: 0 !important;
+  margin-top: 300px !important;
   font-weight: bold !important;
 }
 
 .banner p {
-  color: var(--text-color) !important;
+  color: #fff !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .banner a:visited {
   color: var(--text-color);
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .banner a:hover {
   text-decoration: none;
-  background-color: var(--color-yellow);
-  color: var(--color-blue);
+  background-color: var(--color-blue);
+  color: #fff;
 }
 
 .banner a {
@@ -146,7 +155,7 @@ h3 {
   padding: 5px;
   color: #fff;
   background-color: #eee;
-  color: var(--text-color);
+  color: var(--color-blue);
 
   border-radius: 5px;
 }
