@@ -540,6 +540,10 @@ img {
     height: auto;
   }
 
+  .apresentacao p {
+    text-align: justify;
+  }
+
   .carousel {
     width: 250px;
     height: auto;
@@ -548,6 +552,13 @@ img {
   .f {
     align-items: center;
     justify-content: center;
+  }
+
+  .f h2 {
+    text-align: center;
+  }
+  .f p {
+    text-align: center;
   }
 
   .banner {
