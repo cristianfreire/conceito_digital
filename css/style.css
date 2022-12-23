@@ -498,10 +498,65 @@ img {
   }
 }
 
+@media (max-width: 683px) {
+  .apresentacao {
+    flex-direction: column;
+    height: auto;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  .all_clientes img {
+    width: 100px;
+  }
+}
+
 @media (max-width: 950px) and (min-width: 450px) {
   .box {
     text-align: center;
     height: 180px;
+  }
+}
+
+@media (max-width: 375px) {
+  .meu_header {
+    height: auto !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .apresentacao img {
+    width: 90%;
+  }
+
+  .apresentacao {
+    padding: 10px;
+  }
+
+  .carousel {
+    width: 250px;
+    height: auto;
+  }
+
+  .f {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner {
+    height: auto;
+  }
+
+  .banner h1 {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
   }
 }
 
