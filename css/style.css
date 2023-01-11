@@ -108,20 +108,20 @@ h3 {
 }
 
 .banner {
-  padding: 100px;
   width: 100%;
-  height: 600px;
   font-size: 1.5em;
   /*background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-lancamento-de-foguete-com-fumaca-ou-nuvens_1017-33467.jpg?w=2000");
   */
-  background-image: url("../img/backgorund.jpg");
-
-  background-size: cover;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner h1 {
@@ -196,6 +196,7 @@ h3 {
 .texto {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 
   padding-left: 50px;
@@ -333,6 +334,31 @@ p {
   width: 250px;
 }
 
+.botao_cliente a {
+  background-color: var(--color-blue);
+  border-radius: 5px;
+  font-size: 1.3rem !important;
+  padding: 10px;
+}
+
+.botao_cliente a:visited {
+  color: #fff;
+  background-color: var(--color-blue);
+}
+
+.botao_cliente a:hover {
+  text-decoration: none;
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+.botao_cliente a {
+  text-decoration: none;
+  font-size: 0.6em;
+  color: #fff;
+  background-color: #eee;
+}
+
 .formulario {
   display: flex;
   flex-direction: row;
@@ -459,6 +485,10 @@ h1:last-of-type {
   .clientes2 {
     flex-direction: column;
   }
+
+  .texto {
+    padding-left: 0px !important;
+  }
 }
 
 .header {
@@ -476,7 +506,6 @@ h1:last-of-type {
 
 .box p {
   color: var(--grayishBlue);
-  font-weight: bold;
 }
 
 .box {
@@ -578,6 +607,10 @@ img {
 
   .all_clientes img {
     width: 100px !important;
+  }
+
+  .texto {
+    padding-left: 0px;
   }
 }
 
