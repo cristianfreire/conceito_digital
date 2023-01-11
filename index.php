@@ -1,5 +1,5 @@
 <?php
 
-echo"cristian";
+include("home.html");
 
 ?>
