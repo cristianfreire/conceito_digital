@@ -612,6 +612,34 @@ img {
   .texto {
     padding-left: 0px;
   }
+
+  .botao_cliente a {
+    background-color: var(--color-blue) !important;
+    border-radius: 5px;
+    font-size: 1.3rem !important;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botao_cliente a:visited {
+    color: #fff;
+    background-color: var(--color-blue) !important;
+  }
+
+  .botao_cliente a:hover {
+    text-decoration: none;
+    background-color: var(--text-color);
+    color: #fff;
+  }
+
+  .botao_cliente a {
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #fff;
+    background-color: #eee;
+  }
 }
 
 @media (max-width: 1019px) {
