@@ -242,7 +242,11 @@ h3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--color-yellow);
+  background-color: #343a40;
+}
+
+.depoimentos h2 {
+  color: var(--color-yellow) !important;
 }
 
 .carousel {
@@ -450,9 +454,7 @@ h1:last-of-type {
   h1 {
     font-size: 1.5rem;
   }
-  .apresentacao {
-    flex-direction: column;
-  }
+
   .formulario {
     flex-direction: column;
   }
@@ -507,11 +509,6 @@ img {
 }
 
 @media (max-width: 683px) {
-  .apresentacao {
-    flex-direction: column;
-    height: auto;
-  }
-
   input {
     width: 200px;
   }
@@ -541,15 +538,6 @@ img {
 
   .apresentacao img {
     width: 90%;
-  }
-
-  .apresentacao {
-    padding: 10px;
-    height: auto;
-  }
-
-  .apresentacao p {
-    text-align: justify;
   }
 
   .carousel {
@@ -623,10 +611,6 @@ img {
 }
 
 @media (max-width: 1019px) {
-  .apresentacao {
-    flex-direction: column;
-  }
-
   .all_clientes img {
     width: 150px;
   }
