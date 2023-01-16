@@ -5,7 +5,7 @@
   margin: 0;
   font-family: "Montserrat", sans-serif;
   --primary-color: #abd5fb;
-  --color-blue: #0a17ba;
+  --color-blue: #4125d9;
   --color-yellow: #ffc100;
   --text-color: #2674aa;
 }
@@ -19,12 +19,12 @@ body {
 }
 
 h2 {
-  color: var(--color-blue) !important;
+  color: #000 !important;
   font-weight: bold !important;
 }
 
 h3 {
-  color: #fff !important;
+  color: #000 !important;
   font-weight: bold !important;
   font-size: 1.3rem !important;
 }
@@ -48,16 +48,11 @@ h3 {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-
-  background-image: linear-gradient(
-    to right,
-    var(--color-blue),
-    var(--text-color)
-  );
+  justify-content: center;
+  position: fixed;
 }
 
 .minha_logo {
@@ -96,19 +91,30 @@ h3 {
 
 .menu a:hover {
   text-decoration: none;
-  color: black;
+  color: rgb(136, 136, 136);
 }
 
 .menu a {
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   font-size: 0.8rem;
 }
 
+.contato {
+  padding: 5px !important;
+  border-radius: 5px !important;
+  background-color: #ff5300 !important;
+}
+
+.main {
+  position: relative;
+  top: 0px;
+}
+
 .banner {
-  width: 100%;
   font-size: 1.5em;
   /*background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-lancamento-de-foguete-com-fumaca-ou-nuvens_1017-33467.jpg?w=2000");
   */
@@ -139,14 +145,14 @@ h3 {
 }
 
 .banner a:visited {
-  color: var(--text-color);
+  color: #fff;
   background-color: #fff;
 }
 
 .banner a:hover {
   text-decoration: none;
   background-color: var(--color-blue);
-  color: #fff;
+  color: rgb(136, 136, 136);
 }
 
 .banner a {
@@ -154,10 +160,12 @@ h3 {
   font-size: 0.6em;
   padding: 5px;
   color: #fff;
-  background-color: #eee;
-  color: var(--color-blue);
-
   border-radius: 5px;
+
+  position: absolute;
+  z-index: 0;
+  top: 65%;
+  left: 20%;
 }
 
 .apresentacao {
@@ -189,48 +197,25 @@ h3 {
   padding-top: 50px;
   background-color: #fff;
 }
-
-.meu_card {
-  width: 200px;
-  height: 250px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  background-color: #fff;
+  margin: 40px;
+  padding: 40px;
 }
 
-.meu_card img {
-  height: 50px;
-  width: 50px;
+.wrapper div {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(208, 206, 206);
+  border-radius: 15px;
 }
 
-.meu_card h2 {
-  text-align: justify-all;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.linha {
-  height: 1px;
-  width: 100%;
-  border: 1px solid #000;
-}
-
-.linha1 {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.linha2 {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.wrapper p {
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 .depoimentos {
@@ -273,6 +258,11 @@ h3 {
 
 p {
   margin-bottom: 0rem !important;
+}
+
+.meio img {
+  max-width: 100%;
+  height: auto;
 }
 
 .nossos_clientes {

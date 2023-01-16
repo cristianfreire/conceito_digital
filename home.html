@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="./img/SIMBOLO.png">
+  <script type="text/javascript" src="./js/script.js" defer></script>
+
 
 
 
@@ -17,7 +19,7 @@
 
 <body>
 
-  <header class="meu_header">
+  <header class="meu_header" id="header">
     <div class="minha_logo">
       <img src="./img/BRANCA-SEM-FUNDO-2.png" alt="imagem da logo">
 
@@ -29,7 +31,19 @@
     </div>
 
     <div class="menu">
-      <a href="#">PÁGINA INICIAL</a>
+      <a href="#">Início</a>
+      <a href="#">Sobre nós</a>
+      <a href="#servicos">Serviços&Portifólio</a>
+      <a href="" class="contato">
+        CONTATO →
+      </a>
+
+
+
+      <!--
+
+     
+
       <a href="https://www.facebook.com/agenciaconceitodigital"><img alt="Ícone do instagram Preto" fetchpriority="high"
           src="./img/o-facebook.png" style="width: 20px; height: 20px; object-fit: cover;">
       </a>
@@ -39,6 +53,7 @@
       <a target="_blank" href="https://api.whatsapp.com/message/7EJZQCHRY5XYL1?autoload=1&app_absent=0"><img
           alt="Ícone do whatsapp Preto" fetchpriority="high" src="./img/whatsapp.png"
           style="width: 20px; height: 20px; object-fit: cover;"></a>
+    -->
     </div>
 
   </header>
@@ -47,7 +62,7 @@
   <main>
     <div class="banner">
 
-      <img src="./img/capa-de-perfil-facebook.png" alt="banner">
+      <img src="./img/CABEÇALHO-OFC.png" alt="banner">
 
       <!-- 
 
@@ -60,6 +75,8 @@
       </div>
 
       -->
+
+      <a href="" class="contato">AGENDE UMA REUNIÃO AGORA</a>
 
     </div>
     <!--
@@ -91,61 +108,46 @@
 
     -->
 
-    <div class="servicos">
-      <h2>Nossos Serviços</h2>
+    <div class="servicos" id="servicos">
+      <h2>Conheça Nossas Soluções</h2>
+      <div class="wrapper">
+        <div>
+          <h3>Social Media</h3>
+          <p>Criamos conteúdos, copywriting e organizamos as postagem das suas redes sociais.</p>
+        </div>
+        <div>
+          <h3>Design</h3>
+          <p>Criação de logo, paleta de cores, banners, flyers, fontes e etc.</p>
+        </div>
+        <div>
+          <h3>
+            Vídeos
+          </h3>
+          <p>Gravação de vídeos de alta qualidade e iluminação, som e resolução de imagem.</p>
+        </div>
+        <div>
+          <h3>Gestão de Tráfego</h3>
+          <p>Fazemos campanhas de reconhecimento de marca e conversão de cliente.</p>
+        </div>
+        <div>
+          <h3>Fotografia</h3>
+          <p>Fazemos fotos profissionais de produtos e imagem pessoal.</p>
+        </div>
+        <div>
+          <h3>Landing Page</h3>
+          <p>Desenhamos sites para desktop e mobile, com design responsivo e bem agradável.</p>
+        </div>
+      </div>
+
     </div>
-    <div class="row1-container">
-      <div class="box box-down cyan">
-        <h2>Gestão de Mídias Sociais</h2>
-        <p>Criar novos tipos de negócios, novas formas de comunicação. Uma das grandes vantagens é a
-          comunicação instantânea que as redes sociais oferecem.</p>
-        <img src="./img/midia-social.png" alt="">
-      </div>
 
-      <div class="box red">
-        <h2>Designer Gráfico</h2>
-        <p>Sites, panfletos, outdoors, banners, embalagens, anúncios, campanhas e logotipos</p>
-        <img src="./img/web-design.png" alt="">
-      </div>
 
-      <div class="box box-down blue">
-        <h2>Gravação de Comerciais</h2>
-        <p>Com a concorrência cada dia mais acirrada no mercado, é imprescindível que uma marca evidencie seus
-          diferenciais, levando até onde o cliente esteja o nome da sua empresa.</p>
-        <img src="./img/gravacao-de-video.png" alt="">
-      </div>
-    </div>
-    <div class="row2-container">
-      <div class="box orange">
-        <h2>Influencers Parceiros</h2>
-        <p>Nos dias de hoje, o influenciador é um dos profissionais mais procurados para endossar produtos e serviços.
-        </p>
-        <img src="./img/parceiros-batendo-palmas.png" alt="">
-      </div>
+    <div class="meio">
+      <img src="./img/CIENTES-OFC.png" alt="">
 
     </div>
 
-    <div class="row1-container">
-      <div class="box box-down2 cyan">
-        <h2>Relatórios de Desempenho</h2>
-        <p>Uma ferramenta estratégica para mensurar resultados da empresa. Ele mede a produtividade de setores ou de
-          unidades de uma forma geral.</p>
-        <img src="./img/relatorio-financeiro.png" alt="">
-      </div>
 
-      <div class="box red">
-        <h2>E muito mais</h2>
-        <p>Entre em contato agora mesmo</p>
-        <img src="./img/citar.png" alt="">
-      </div>
-
-      <div class="box box-down2 blue">
-        <h2>Criação de Sites</h2>
-        <p>Desenhamos sites para rodar rápido no desktop e principalmente no mobile, com desing reponsivo e bem
-          agradável.</p>
-        <img src="./img/local-na-rede-internet.png" alt="">
-      </div>
-    </div>
 
 
 
@@ -185,33 +187,6 @@
     </div>
 
 
-    <div class="nossos_clientes">
-      <h2>Alguns de nossos clientes</h2>
-
-      <div class="all_clientes">
-        <div class="clientes">
-          <img src="./img/ALFREDO.png" alt="logo cliente">
-          <img src="./img/BARAUNA.png" alt="logo cliente">
-          <img src="./img/CATSDOGS.png" alt="logo cliente">
-          <img src="./img/DOCERIA.png" alt="logo cliente">
-          <img src="./img/Q (12).png" alt="logo cliente">
-        </div>
-        <div class="clientes2">
-          <img src="./img/ENERGIA-VITAL.png" alt="logo cliente">
-          <img src="./img/FÁBRICA-DE-MOVEIS.png" alt="logo cliente">
-          <img src="./img/MESTRE-DO-SABOR.png" alt="logo cliente">
-          <img src="./img/Q (13).png" alt="logo cliente">
-        </div>
-      </div>
-
-      <div class="botao_cliente">
-        <a target="_blank" href="https://api.whatsapp.com/message/7EJZQCHRY5XYL1?autoload=1&app_absent=0"><img>
-          QUERO SER CLIENTE
-        </a>
-      </div>
-
-
-    </div>
 
 
     <div class="formulario">
