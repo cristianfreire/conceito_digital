@@ -105,6 +105,14 @@
     // fazer algo com os produtos selecionados e o preço total, como enviar para o servidor
     console.log(produtosSelecionados);
     console.log(precoTotalProdutos.toFixed(2));
+
+    const numero = "5592992803630"; // Substitua pelo número do destinatário
+    const mensagem = `Olá, meu nome é ${nome}. E meu pedio é este: ${produtosSelecionados} Valor Total: ${precoTotalProdutos.toFixed(2)}`; // Mensagem pré-preenchida
+
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(link, "_blank");
+
+
   });
 
   function calcularPrecoTotal(preco, quantidade) {
@@ -118,6 +126,7 @@
     }
     return precoTotal;
   }
+
 </script>
 
 </html>
