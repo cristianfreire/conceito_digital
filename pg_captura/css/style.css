@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  --primary-color: #abd5fb;
+  --color-blue: #4125d9;
+  --color-yellow: #ffc100;
+  --text-color: #2674aa;
+}
+
+html {
+  font-size: 15px;
+}
+
+p {
+  color: #fff;
+}
+
+strong {
+  color: #ffc100;
+}
+
+@media only screen and (max-device-width: 400px) {
+  body {
+    background-image: url("../../img/fundo.png");
+  }
+
+  header {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .modelo {
+    height: 100px;
+  }
+}
