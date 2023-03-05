@@ -26,6 +26,10 @@ strong {
   color: #ffc100;
 }
 
+label {
+  color: #fff;
+}
+
 @media only screen and (max-device-width: 400px) {
   body {
     background-image: url("../../img/fundo.png");
@@ -62,5 +66,35 @@ strong {
 
   p {
     margin-top: 10px;
+  }
+
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    padding: 5px;
+  }
+
+  input[type="text"] {
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #222;
   }
 }

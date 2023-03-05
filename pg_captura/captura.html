@@ -24,6 +24,30 @@
     <img class="modelos" src="../img/destaques/modelos.png" alt="">
     <img class="modelos" src="../img/destaques/modelos2.png" alt="2">
 
+    <form>
+      <label for="nome">Informe o seu nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="instagram">Informe seu @ do instagram:</label>
+      <input type="text" id="instagram" name="instagram">
+
+      <button type="button" onclick="enviarMensagem()">Enviar mensagem</button>
+    </form>
+
+    <script>
+      function enviarMensagem() {
+        const nome = document.getElementById("nome").value;
+        const instagram = document.getElementById("instagram").value;
+
+        const numero = "5592992803630"; // Substitua pelo número do destinatário
+        const mensagem = `Olá, meu nome é ${nome} e meu Instagram é ${instagram}. Gostaria de receber o pacote com destaques para o meu Insta`; // Mensagem pré-preenchida
+
+        const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+        window.open(link, "_blank");
+      }
+    </script>
+
+
 
   </main>
 
