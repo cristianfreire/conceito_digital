@@ -18,7 +18,7 @@
 
           // Envia os dados modificados de volta ao servidor
           fetch('https://conceitodigital.herokuapp.com/teste_pg_venda/teste.json', {
-            method: 'PUT',
+            method: 'PATCH',
             body: JSON.stringify(data),
             headers: {
               'Content-Type': 'application/json'
