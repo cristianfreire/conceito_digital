@@ -95,24 +95,32 @@
             precoTotal: calcularPrecoTotal(preco, quantidade),
           };
           produtosSelecionados.push(produto);
+
+          // calcular o preço total dos produtos selecionados
+          const precoTotalProdutos = calcularPrecoTotalProdutos(produtosSelecionados);
+
+
+          const numero = "5592992803630"; // Substitua pelo número do destinatário
+          const nome = "Teste";
+          const mensagem = `Olá, meu nome é ${nome}. E meu pedio é este: ${produtosSelecionados} Valor Total: ${precoTotalProdutos.toFixed(2)}`; // Mensagem pré-preenchida
+
+
+          const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+          window.open(link, "_blank");
         } else {
           alert('A quantidade selecionada para o produto "' + checkbox.parentNode.querySelector('h2').textContent + '" deve ser maior que 0.');
         }
       }
     });
 
-    // calcular o preço total dos produtos selecionados
-    const precoTotalProdutos = calcularPrecoTotalProdutos(produtosSelecionados);
+
 
     // fazer algo com os produtos selecionados e o preço total, como enviar para o servidor
     console.log(produtosSelecionados);
     console.log(precoTotalProdutos.toFixed(2));
 
-    const numero = "5592992803630"; // Substitua pelo número do destinatário
-    const mensagem = `Olá, meu nome é ${nome}. E meu pedio é este: ${produtosSelecionados} Valor Total: ${precoTotalProdutos.toFixed(2)}`; // Mensagem pré-preenchida
 
-    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-    window.open(link, "_blank");
+
 
 
   });
