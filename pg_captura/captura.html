@@ -21,8 +21,8 @@
 
     <p>SÃO VÁRIOS MODELOS DIFERENTES PARA VOCÊ ESCOLHER</p>
 
-    <img class="modelos" src="../img/destaques/modelos.png" alt="">
-    <img class="modelos" src="../img/destaques/modelos2.png" alt="2">
+    <img class="modelos" src="../img/destaques/tinified/modelos.png" alt="">
+    <img class="modelos" src="../img/destaques/tinified/modelos2.png" alt="2">
 
     <form>
       <label for="nome">Informe o seu nome:</label>
@@ -37,7 +37,9 @@
     <script>
       function enviarMensagem() {
         const nome = document.getElementById("nome").value;
-        const instagram = document.getElementById("instagram").value;
+        let instagram = document.getElementById("instagram").value;
+        instagram.toLowerCase();
+
 
         const numero = "5592992803630"; // Substitua pelo número do destinatário
         const mensagem = `Olá, meu nome é ${nome} e meu Instagram é ${instagram}. Gostaria de receber o pacote com destaques para o meu Insta`; // Mensagem pré-preenchida
