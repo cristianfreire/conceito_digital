@@ -19,7 +19,7 @@ p {
 }
 
 h1 {
-  color: #fff;
+  color: #fff !important;
 }
 
 strong {
@@ -39,7 +39,9 @@ strong {
   }
 
   .logo {
-    padding: 40px;
+    margin-top: 30px;
+    width: 350px;
+    height: 153px;
   }
 
   main {
