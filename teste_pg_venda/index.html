@@ -78,6 +78,10 @@
     event.preventDefault(); // evitar que o formulário seja submetido
 
     const produtosSelecionados = [];
+    let Listaprodutos = "";
+    const numero = "5592992803630";
+    let message = "";
+
 
     // percorrer todos os checkboxes do formulário
     form.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
@@ -86,7 +90,7 @@
         const quantidade = checkbox.parentNode.querySelector('input[type="number"]').value;
         if (quantidade > 0) {
           const precoString = checkbox.parentNode.querySelector('p:nth-of-type(2)').textContent.replace(',', '.').replace(/[^\d.-]/g, '');
-          const preco = parseFloat(precoString).toFixed(2);
+          const preco = parseFloat(precoString);
           const produto = {
             nome: checkbox.parentNode.querySelector('h2').textContent,
             descricao: checkbox.parentNode.querySelector('p:nth-of-type(1)').textContent,
@@ -96,31 +100,33 @@
           };
           produtosSelecionados.push(produto);
 
-          // calcular o preço total dos produtos selecionados
-          const precoTotalProdutos = calcularPrecoTotalProdutos(produtosSelecionados);
+          const nome2 = produto.nome;
+          const precoUnitario2 = produto.preco;
+          const quantidade2 = produto.quantidade;
+          const precoTotal2 = produto.precoTotal.toFixed(2);
+          const linha = `${nome2} R$ ${precoUnitario2} x ${quantidade2} = R$${precoTotal2}`;
+
+          Listaprodutos += "\n" + linha;
 
 
-          const numero = "5592992803630"; // Substitua pelo número do destinatário
-          const nome = "Teste";
-          const mensagem = `Olá, meu nome é ${nome}. E meu pedio é este: ${produtosSelecionados} Valor Total: ${precoTotalProdutos.toFixed(2)}`; // Mensagem pré-preenchida
-
-
-          const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-          window.open(link, "_blank");
         } else {
           alert('A quantidade selecionada para o produto "' + checkbox.parentNode.querySelector('h2').textContent + '" deve ser maior que 0.');
         }
       }
+
+
+      const precoTotalProdutos = calcularPrecoTotalProdutos(produtosSelecionados);      // calcular o preço total dos produtos selecionados
+      // Substitua pelo número do destinatário
+      const nome = "Teste";
+      message = `Olá, meu nome é ${nome}. E meu pedio é este: ${Listaprodutos} Valor Total: ${precoTotalProdutos.toFixed(2)}`; // Mensagem pré-preenchida
+
+
+
+
     });
 
-
-
-    // fazer algo com os produtos selecionados e o preço total, como enviar para o servidor
-    console.log(produtosSelecionados);
-    console.log(precoTotalProdutos.toFixed(2));
-
-
-
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
+    window.open(link, "_blank");
 
 
   });
