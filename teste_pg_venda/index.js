@@ -1,11 +1,11 @@
-fetch('https://exemplo.com/meuarquivo.json')
+fetch('http://conceitodigital.herokuapp.com/teste_pg_venda/teste.json')
   .then(response => response.json())
   .then(data => {
     // Modifica os dados
     data.novo_objeto = { nome: 'Exemplo', idade: 25 };
     
     // Envia os dados modificados de volta ao servidor
-    fetch('https://exemplo.com/meuarquivo.json', {
+    fetch('http://conceitodigital.herokuapp.com/teste_pg_venda/teste.json', {
       method: 'PUT',
       body: JSON.stringify(data),
       headers: {
